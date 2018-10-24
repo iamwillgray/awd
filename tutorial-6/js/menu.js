@@ -7,7 +7,7 @@
 
 */
 
-
+/*
 function showMenu() {
  var openMenu = document.getElementById("desktopNav");
  console.log();
@@ -27,19 +27,17 @@ function navOverlay() {
  menuOverlay.style.maxHeight= "100vh";
  menuOverlay.style.height= "auto";
 }
+*/
 
-/*
 
 
-function myFunction(){
-	var elements = document.getElementsByClassName("topnav-link");
-	for(var i=0; i< elements.length; i++){
-		if (elements[i].className === "topnav-link") {
-        elements[i].className += " responsive";
-    	} else {
-        elements[i].className = "topnav-link";
-    	}
-	}
+
+
+function showMenu() {
+    var x = document.getElementById("desktopNav");
+    if (x.className === "mainNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNav";
+    }
 }
-
- */
