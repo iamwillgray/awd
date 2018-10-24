@@ -29,8 +29,10 @@ nav li {
 nav li a {
     display: block;
     text-decoration: none;
-    padding: 8px;
-    height: 70px;
+    padding: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    height: 60px;
 }
 
 nav li a:hover {
