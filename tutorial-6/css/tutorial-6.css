@@ -11,9 +11,7 @@ nav {
 }
 
 #menu-icon {
-  display: inline-block;
-  float: right;
-  margin: 22px;
+  display: none;
 }
 
 nav ul {
@@ -52,4 +50,20 @@ nav li a:hover {
 
 .fa-bars:hover {
   cursor: pointer;
+}
+
+/* Tablet */
+
+@media (max-width:870px) {
+
+.desktop-nav {
+  display: none;
+}
+
+#menu-icon {
+  display: inline-block;
+  float: right;
+  margin: 22px;
+}
+
 }
