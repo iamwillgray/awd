@@ -23,10 +23,11 @@ nav ul {
 }
 
 nav li {
-    float: left;
+
 }
 
 nav li a {
+    float: left;
     display: block;
     text-decoration: none;
     padding: 16px;
@@ -37,4 +38,17 @@ nav li a {
 
 nav li a:hover {
     background-color: #111;
+}
+
+
+.active {
+  background-color: #36cece;
+}
+
+.fa-bars {
+  color: #ffffff;
+}
+
+.fa-bars:hover {
+  cursor: pointer;
 }
