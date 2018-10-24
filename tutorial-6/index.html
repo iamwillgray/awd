@@ -16,6 +16,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- font-awesome end -->
 
+  <style>
+
+  .desktopNav {
+  display: block;
+  }
+
+  @media (max-width:870px) {
+    .desktopNav {
+    display: none;
+    }
+  }
+
+  </style>
+
 </head>
 
 <body>
@@ -25,7 +39,7 @@
     <div id='menu-icon' onclick="showMenu()" class="fa fa-bars"></div>
 
 
-    <ul class="desktopNav">
+    <ul id="desktopNav">
 
       <li><a class="active" href="#">Item 1</a></li>
       <li><a href="#">Item 2</a></li>

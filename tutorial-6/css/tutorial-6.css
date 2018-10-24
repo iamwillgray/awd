@@ -81,7 +81,7 @@ li.dropdown {
   cursor: pointer;
 }
 
-.desktopNav {
+#desktopNav {
 display: block;
 }
 
@@ -93,7 +93,7 @@ display: block;
   display: none;
 } */
 
-.desktopNav {
+#desktopNav {
 display: none;
 }
 

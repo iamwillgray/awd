@@ -9,7 +9,7 @@
 
 
 function showMenu() {
- var openMenu = document.getElementsByClassName("desktopNav");
+ var openMenu = document.getElementById("desktopNav");
  console.log();
  openMenu.style.display= "block";
 
