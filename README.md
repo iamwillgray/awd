@@ -13,3 +13,6 @@ https://iamwillgray.github.io/awd/tutorial-4/chromeunboxed.html
 
 # Tutorial 5
 https://iamwillgray.github.io/awd/tutorial-5/exercise-2.html
+
+# Tutorial 6
+https://iamwillgray.github.io/awd/tutorial-6/index.html
