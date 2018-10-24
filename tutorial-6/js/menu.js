@@ -14,22 +14,32 @@ function showMenu() {
  openMenu.style.display= "block";
 }
 
+function hideMenu() {
+ var closeMenu = document.getElementById("desktopNav");
+ console.log();
+ closeMenu.style.display= "none";
+}
+
 function navOverlay() {
  var menuOverlay = document.getElementById("topNav");
  console.log();
  menuOverlay.style.position= "static";
+ menuOverlay.style.maxHeight= "100vh";
  menuOverlay.style.height= "auto";
 }
 
+/*
 
-/* var mobileNav = true;
 
-function showMenu() {
-    if (mobile) {
-      openMenu.style.display= "block";
-        mobileNav = false;
-    } else {
-      openMenu.style.display= "none";
-        mobileNav = true;
-    }
-} */
+function myFunction(){
+	var elements = document.getElementsByClassName("topnav-link");
+	for(var i=0; i< elements.length; i++){
+		if (elements[i].className === "topnav-link") {
+        elements[i].className += " responsive";
+    	} else {
+        elements[i].className = "topnav-link";
+    	}
+	}
+}
+
+ */
