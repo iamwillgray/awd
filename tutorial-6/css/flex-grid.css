@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* Colours */
+
+:root {
+
+  /* Primary */
+  --body-main: #364344;
+  --body-secondary: #757575;
+  --body-link: #0B7BFB;
+  --error-orange: #FF6000;
+  --complete-green: #00CE82;
+  --complete-border: #008D59;
+  --decline-red: #F67BA0;
+  --decline-border: #DB347F;
+
+  /* Backgrounds & Borders */
+  --background-main: #FFFFFF;
+  --background-secondary: #F3F4F7;
+  --background-quote: #FBFBFC;
+  --border-grey: #CBCBCB;
+  --hover: #F2F9FA;
+  --locked: #EEEEEE;
+  --background-error: #FFECE1;
+
+  /* Products */
+
+  /* LDP */
+    --ldp-main: #30C6E2;
+    --ldp-secondary: #249CB5;
+    --ldp-gradient: linear-gradient(#31CEEA 0%, #30C6E2 100%);
+  /* CSI */
+    --csi-main: #36CECE;
+    --csi-secondary: #16B3B3;
+    --csi-gradient: linear-gradient(#33CCCC 0%, #66EDEF 100%);
+  /* Rental */
+    --rental-main: #43D3B1;
+    --rental-secondary: #35C2A1;
+    --rental-gradient: linear-gradient(#33CCAA 0%, #92F3D3 100%);
+}
+
+/* ---------- */
+
+/* Typography */
+
+h1,h2,h3,h4,h5,h6,p,label,a {
+  margin: 0 auto;
+}
+
+.giga h1 {
+	color: var(--body-main);
+	font-family: 'Raleway';
+	font-size: 100px;
+	font-weight: 900;
+	line-height: 100px;
+}
+
+.mega h2 {
+  	color: var(--body-main);
+  	font-family: "Gotham Rounded";
+  	font-size: 66px;
+  	font-weight: 300;
+  	line-height: 79px;
+  }
+
+h1 {
+	color: var(--body-main);
+	font-family: "Gotham Rounded";
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+h2 {
+	color: var(--body-main);
+	font-family: "Gotham Rounded";
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 34px;
+}
+
+h3 {
+	color: var(--body-main);
+	font-family: "Gotham Rounded";
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 36px;
+}
+
+h4 {
+	color: var(--body-main);
+	font-family: "Gotham Rounded";
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 32px;
+}
+
+h5 {
+	color: var(--body-main);
+	font-family: "Gotham Rounded";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+h6 {
+	color: var(--body-main);
+	font-family: "Gotham Rounded";
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+p {
+	color: var(--body-main);
+	font-family: "Proxima Nova Soft";
+	font-size: 16px;
+	line-height: 20px;
+}
+
+a {
+	color: var(--body-link);
+  text-decoration: none;
+	font-family: "Proxima Nova Soft";
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.legal p {
+	color: var(--body-main);
+	font-family: "Proxima Nova Soft";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 19px;
+}
+
+label {
+  color: var(--body-main);
+	font-family: "Proxima Nova Soft";
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.32px;
+	line-height: 19px;
+}
+
+.summary-title h6 {
+	color: var(--body-main);
+	font-family: "Proxima Nova Soft";
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 19px;
+}
+
+.summary-item h6 {
+	color: var(--body-main);
+	font-family: "Proxima Nova Soft";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 19px;
+}
+
+.tiny h6 {
+	color: var(--body-main);
+	font-family: "Proxima Nova Soft";
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+/* ---------- */
+
+
+/* Core Grid */
+
+.organism {
+  padding-top: 96px;
+  padding-bottom: 86px;
+  margin-bottom: 1px;
+}
+.row-container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100%;
+}
+
+.img-block {
+  display: flex;
+}
+
+.img-block > img {
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
+}
+
+/* Columns */
+
+.col-10 {
+  display: flex;
+  flex: 10%;
+}
+.col-15 {
+  display: flex;
+  flex: 15%;
+}
+.col-20 {
+  display: flex;
+  flex: 20%;
+}
+.col-25 {
+  display: flex;
+  flex: 25%;
+}
+.col-33 {
+  display: flex;
+  flex: 33%;
+}
+.col-40 {
+  display: flex;
+  flex: 40%;
+}
+.col-45 {
+  display: flex;
+  flex: 45%;
+}
+.col-50 {
+  display: flex;
+  flex: 50%;
+}
+.col-55 {
+  display: flex;
+  flex: 55%;
+}
+.col-60 {
+  display: flex;
+  flex: 60%;
+}
+.col-75 {
+  display: flex;
+  flex: 75%;
+}
+.col-80 {
+  display: flex;
+  flex: 80%;
+}
+.col-85 {
+  display: flex;
+  flex: 85%;
+}
+.col-90 {
+  display: flex;
+  flex: 90%;
+}
+.col-100 {
+  display: flex;
+  flex: 100%;
+}
+
+/* Core Styles */
+
+.card {
+  padding: 24px;
+  margin: 8px;
+}
+
+.standard {
+  	border: 0.5px solid var(--border-grey);
+  	border-radius: 4px;
+  	background-color: var(--background-main);
+  	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08);
+  }
+
+  .light {
+	background-color: var(--background-main);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08);
+}
+
+.dark {
+	background-color: var(--background-quote);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+/* Tablet */
+
+@media (max-width:870px) {
+
+  /* Columns */
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    -webkit-flex-wrap: nowrap; /* Safari */
+    flex-wrap: wrap;
+  }
+
+  .col-10, .col-15, .col-20, .col-25, .col-33, .col-40, .col-45, .col-50, .col-55, .col-60, .col-75, .col-80, .col-85, .col-90 {
+    margin-left: 1%;
+    margin-right: 1%;
+    flex:100%;
+  }
+
+  .img-block {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    align-self: center;
+  }
+
+  .img-block > img {
+    margin: 0 auto;
+    align-self: center;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:464px) {
+
+
+}

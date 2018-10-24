@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #364344;
+}
+
+#menu-icon {
+  display: inline-block;
+  float: right;
+  margin: 22px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    height: 70px;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
