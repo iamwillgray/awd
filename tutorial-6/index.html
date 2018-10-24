@@ -20,13 +20,23 @@
 
     <nav>
 
-      <ul>
+      <ul class="desktop-nav">
 
-        <li><a class="desktop-nav active" href="#">Item 1</a></li>
-        <li><a class="desktop-nav" href="#">Item 2</a></li>
-        <li><a class="desktop-nav" href="#">Item 3</a></li>
-        <li><div id='menu-icon' class="fa fa-bars"></div></li>
+        <li><a class="active" href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li class='dropdown'>
+          <a href="javascript:void(0)" class="dropbtn" href="#">Item 3</a>
+          <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div>
+
+        </li>
+
       </ul>
+
+      <div id='menu-icon' class="fa fa-bars"></div>
 
     </nav>
 
