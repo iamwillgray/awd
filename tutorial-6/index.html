@@ -1,154 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
 
-<!-- CSS -->
-<link href="css/flex-grid.css" rel="stylesheet">
-<link href="css/tutorial-6.css" rel="stylesheet">
-<!-- CSS end -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
 
-<!-- font-awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- font-awesome end -->
+  <!-- CSS -->
+  <link href="css/flex-grid.css" rel="stylesheet">
+  <link href="css/tutorial-6.css" rel="stylesheet">
+  <!-- CSS end -->
 
-  </head>
-  <body>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font-awesome end -->
 
-    <nav>
+</head>
 
-      <ul class="desktop-nav">
+<body>
 
-        <li><a class="active" href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li class='dropdown'>
-          <a href="javascript:void(0)" class="dropbtn" href="#">Item 3</a>
-          <div class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-</div>
+  <nav>
 
-        </li>
-
-      </ul>
-
-      <div id='menu-icon' class="fa fa-bars"></div>
-
-    </nav>
+    <div id='menu-icon' onclick="showMenu()" class="fa fa-bars"></div>
 
 
+    <ul class="desktopNav">
 
-    <!-- section start -->
-      <section class="organism dark">
-
-    <!-- 3 column -->
-        <div class="row-container">
-          <div class="row">
-            <div class="col-33">
-              <div class="card standard">
-
-                <!-- content start -->
-                <h3>Some Headings</h3>
-                <div class="fake-img" style="height:200px">img1</div>
-                <p>Lo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <!-- content end -->
-
-              </div>
-              <!-- card end -->
-
-            </div>
-            <!-- col-33 end -->
-
-            <div class="col-33">
-              <div class="card standard">
-
-                <!-- content start -->
-                <h3>Some Headings</h3>
-                <div class="fake-img" style="height:200px">img1</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <!-- content end -->
-
-              </div>
-              <!-- card end -->
-
-            </div>
-            <!-- col-33 end -->
-
-            <div class="col-33">
-              <div class="card standard">
-
-                <!-- content start -->
-                <h3>Some Headings</h3>
-                <div class="fake-img" style="height:200px">img1</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <!-- content end -->
-
-              </div>
-              <!-- card end -->
-
-            </div>
-            <!-- col-33 end -->
-
-          </div>
-          <!-- row end -->
+      <li><a class="active" href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li class='dropdown'>
+        <a href="javascript:void(0)" class="dropbtn" href="#">Item 3</a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
 
-      </section>
-      <!-- 3 col section end -->
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+
+  <!-- section start -->
+  <section class="organism dark">
+
+    <!-- 3 column -->
+    <div class="row-container">
+      <div class="row">
+        <div class="col-33">
+          <div class="card standard">
+
+            <!-- content start -->
+            <h3>Some Headings</h3>
+            <div class="fake-img" style="height:200px">img1</div>
+            <p>Lo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.</p>
+            <!-- content end -->
+
+          </div>
+          <!-- card end -->
+
+        </div>
+        <!-- col-33 end -->
+
+        <div class="col-33">
+          <div class="card standard">
+
+            <!-- content start -->
+            <h3>Some Headings</h3>
+            <div class="fake-img" style="height:200px">img1</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <!-- content end -->
+
+          </div>
+          <!-- card end -->
+
+        </div>
+        <!-- col-33 end -->
+
+        <div class="col-33">
+          <div class="card standard">
+
+            <!-- content start -->
+            <h3>Some Headings</h3>
+            <div class="fake-img" style="height:200px">img1</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <!-- content end -->
+
+          </div>
+          <!-- card end -->
+
+        </div>
+        <!-- col-33 end -->
+
+      </div>
+      <!-- row end -->
+    </div>
+
+  </section>
+  <!-- 3 col section end -->
 
   <!-- ......................................................... -->
 
   <!-- section start -->
-    <section class="organism light">
+  <section class="organism light">
 
-  <!-- 3 column -->
-      <div class="row-container">
-        <div class="row">
-          <div class="col-60">
-            <div class="card standard">
+    <!-- 3 column -->
+    <div class="row-container">
+      <div class="row">
+        <div class="col-60">
+          <div class="card standard">
 
-              <!-- content start -->
-              <h3>Some Headings</h3>
-              <div class="fake-img" style="height:200px">img1</div>
-              <p>Lo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <!-- content end -->
-
-            </div>
-            <!-- card end -->
+            <!-- content start -->
+            <h3>Some Headings</h3>
+            <div class="fake-img" style="height:200px">img1</div>
+            <p>Lo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.</p>
+            <!-- content end -->
 
           </div>
-          <!-- col-60 end -->
-
-          <div class="col-40">
-            <div class="card standard">
-
-              <!-- content start -->
-              <h3>Some Headings</h3>
-              <div class="fake-img" style="height:200px">img1</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <!-- content end -->
-
-            </div>
-            <!-- card end -->
-
-          </div>
-          <!-- col-40 end -->
-
+          <!-- card end -->
 
         </div>
-        <!-- row end -->
+        <!-- col-60 end -->
+
+        <div class="col-40">
+          <div class="card standard">
+
+            <!-- content start -->
+            <h3>Some Headings</h3>
+            <div class="fake-img" style="height:200px">img1</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <!-- content end -->
+
+          </div>
+          <!-- card end -->
+
+        </div>
+        <!-- col-40 end -->
+
+
       </div>
+      <!-- row end -->
+    </div>
 
-    </section>
-    <!-- 3 col section end -->
+  </section>
+  <!-- 3 col section end -->
 
-<!-- ......................................................... -->
+  <!-- ......................................................... -->
 
 
+<script src="js/menu.js"></script>
 
-  </body>
+</body>
+
 </html>
