@@ -32,12 +32,19 @@ function navOverlay() {
 
 
 
-
 function showMenu() {
-    var x = document.getElementById("desktopNav");
-    if (x.className === "mainNav") {
-        x.className += " responsive";
-    } else {
-        x.className = "mainNav";
+    // i is finding the ID desktopNav in the HTML
+    var i = document.getElementById("desktopNav");
+    // this says if the showMenu function is active mainNav is present
+    if (i.className === "mainNav")
+    //== means if the class equal mainNav
+    {
+        i.className += " responsive";
+    //+= the responsive css class to it, which makes the element display on click
     }
+
+    else {
+        i.className = "mainNav";
+    }
+    //turns the display off
 }
