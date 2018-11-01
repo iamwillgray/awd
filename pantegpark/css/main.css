@@ -511,6 +511,8 @@ to   { transform: translate3d(0, 12px, 0); }
     }
   }
 
+  .show {display:block;}
+
 
 /* Mobile */
 
