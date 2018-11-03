@@ -532,12 +532,13 @@ to   { transform: translate3d(0, 12px, 0); }
 
 .hero h1 {
     font-size: 12vw;
+    margin-bottom: -14px;
 }
 
 .hero h2 {
     margin-bottom: 32px;
     font-size: 8vw;
-    margin-bottom: -14px;
+
 }
 
 
