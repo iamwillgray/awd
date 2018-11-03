@@ -36,6 +36,15 @@ window.onclick = function(event) {
   }
 }
 
+if($('.responsive').is(':visible'))
+{
+   $('body').addClass("fixedPosition");
+}
+else
+{
+   $('body').removeClass("fixedPosition");
+}
+
 
 /* // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
