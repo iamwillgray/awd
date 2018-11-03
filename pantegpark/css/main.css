@@ -81,10 +81,10 @@ p {
     -- row-container
     ---- row
     ------ col (these should equal 100%)
-    -------- assests can then be placed within
-             the in a sigle div, such as an card,
-             img-block and styled with light,
-             dark, standard etc.
+    -------- card / img block
+    ---------- assests can then be placed within
+               the in a sigle div and styled with light,
+              dark, standard etc.
  */
 
 .organism {
@@ -338,6 +338,18 @@ h3:after {
     width: 100%;
 }
 
+h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-image {
+  width: 300px;
+  height: 300px;
+}
+
+/* Scroller Ball */
+
 .scroller {
   position: relative;
   bottom: 0;
@@ -375,10 +387,13 @@ from {  transform: translate3d(0, 0, 0); }
 to   { transform: translate3d(0, 12px, 0); }
 }
 
+
 .scroller h4 {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Universal Buttons */
 
 .button-lg {
   float: left;
@@ -491,7 +506,7 @@ to   { transform: translate3d(0, 12px, 0); }
       display: block;
     }
 
-    .navbar.responsive {position: fixed; height: 100vh;}
+    .navbar.responsive {position: fixed; height: 100%;}
     .navbar.responsive a.icon {
       position: absolute;
       right: 0;
@@ -509,9 +524,27 @@ to   { transform: translate3d(0, 12px, 0); }
       width: 100%;
       text-align: left;
     }
+
+    .hero-image {
+        width: 60%;
+        height: auto;
+    }
+
+.hero h1 {
+    font-size: 54px;
+}
+
+.hero h2 {
+    margin-bottom: 32px;
+    font-size: 40px;
+    margin-bottom: -14px;
+}
+
+
   }
 
   .show {display:block;}
+
 
 
 /* Mobile */
