@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0 auto;
 }
@@ -13,7 +14,6 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Poppins:800,900');
 
 /* Colours */
-
 :root {
   --primary: #691C2E;
   --secondary: #FFC744;
@@ -25,57 +25,60 @@ body {
 }
 
 /* Typography Start */
-
-h1,h2,h3,h4,h5,h6,p,a {
+h1, h2, h3, h4, h5, h6, p, a {
   margin: 0 auto;
 }
 
 h1 {
-	color: var(--secondary);
+  color: var(--secondary);
   font-family: 'Poppins', sans-serif;
-	font-size: 72px;
-	font-weight: 800;
-	line-height: 108px;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 108px;
 }
 
 h2 {
   text-shadow: -2px 0 var(--secondary), 0 2px var(--secondary), 2px 0 var(--secondary), 0 -2px var(--secondary);
-	color: var(--primary);
-	font-family: 'Poppins', sans-serif;
-	font-size: 48px;
-	font-weight: 900;
-	line-height: 72px;
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 72px;
 }
 
 h3 {
-	color: var(--primary);
-	font-family: 'Poppins', sans-serif;
-	font-size: 28px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	line-height: 42px;
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 42px;
   border-bottom: 4px solid var(--secondary);
   margin-bottom: 24px;
 }
 
 h4 {
-	color: var(--secondary);
-	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
-	line-height: 27px;
+  color: var(--secondary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 400;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
-	color: var(--body);
-	font-size: 18px;
+  color: var(--body);
+  font-size: 18px;
+}
+
+a {
+  font-weight: bold;
+  color: var(--link);
+  text-decoration: none;
 }
 
 /* Typography Ends */
-
 /* Core Grid */
-
 /* The structure of the grid should go as follows:
     organism
     -- row-container
@@ -86,16 +89,17 @@ p {
                the in a sigle div and styled with light,
               dark, standard etc.
  */
-
 .organism {
   padding-top: 72px;
   padding-bottom: 72px;
   margin-bottom: 1px;
 }
+
 .row-container {
   margin: 0 auto;
   max-width: 1024px;
 }
+
 .row {
   display: flex;
   justify-content: center;
@@ -107,110 +111,122 @@ p {
   display: flex;
 }
 
-.img-block > img {
+.img-block>img {
   max-width: 100%;
   max-height: 100%;
   align-self: center;
 }
 
 /* Columns */
-
 .col-10 {
   display: flex;
   flex: 10%;
 }
+
 .col-15 {
   display: flex;
   flex: 15%;
 }
+
 .col-20 {
   display: flex;
   flex: 20%;
 }
+
 .col-25 {
   display: flex;
   flex: 25%;
 }
+
 .col-30 {
   display: flex;
   flex: 30%;
 }
+
 .col-33 {
   display: flex;
   flex: 33%;
 }
+
 .col-40 {
   display: flex;
   flex: 40%;
 }
+
 .col-45 {
   display: flex;
   flex: 45%;
 }
+
 .col-50 {
   display: flex;
   flex: 50%;
 }
+
 .col-55 {
   display: flex;
   flex: 55%;
 }
+
 .col-60 {
   display: flex;
   flex: 60%;
 }
+
 .col-70 {
   display: flex;
   flex: 70%;
 }
+
 .col-75 {
   display: flex;
   flex: 75%;
 }
+
 .col-80 {
   display: flex;
   flex: 80%;
 }
+
 .col-85 {
   display: flex;
   flex: 85%;
 }
+
 .col-90 {
   display: flex;
   flex: 90%;
 }
+
 .col-100 {
   display: flex;
   flex: 100%;
 }
 
 /* Core Styles */
-
 .card {
   padding: 24px;
   margin: 8px;
 }
 
 .standard {
-  	border: 0.5px solid var(--border-grey);
-  	border-radius: 4px;
-  	background-color: var(--background-main);
-  	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08);
-  }
+  border: 0.5px solid var(--border-grey);
+  border-radius: 4px;
+  background-color: var(--background-main);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
 
 .light {
-	background-color: var(--white);
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08);
+  background-color: var(--white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
 .dark {
-	background-color: var(--alt-grey);
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+  background-color: var(--alt-grey);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-
 /* Nav Start */
-
 .logo {
   position: absolute;
   display: block;
@@ -228,85 +244,83 @@ p {
 }
 
 .navbar {
-    z-index: 1;
-    width: 100%;
-    position: fixed;
-    background-color: var(--primary);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  background-color: var(--primary);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: var(--secondary);
-    text-align: center;
-    padding: 18px 18px 14px 18px;
-    text-decoration: none;
-    font-size: 18px;
-    border-bottom: 4px solid transparent;
+  float: left;
+  display: block;
+  color: var(--secondary);
+  text-align: center;
+  padding: 18px 18px 14px 18px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 4px solid transparent;
 }
 
 .navbar a.active {
-    border-bottom: 4px solid var(--secondary);
+  border-bottom: 4px solid var(--secondary);
 }
 
 .navbar .icon {
-    display: none;
+  display: none;
 }
 
 .dropdown {
-    float:left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
 .dropdown .dropbtn {
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color: var(--secondary);
-    font-weight: 800;
-    padding: 18px 18px 18px 18px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: var(--secondary);
+  font-weight: 800;
+  padding: 18px 18px 18px 18px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: var(--hover);
+  background-color: var(--hover);
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--white);
-    min-width: 160px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  min-width: 160px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  z-index: 1;
 }
 
 .dropdown-content a {
-    float: none;
-    color: var(--primary);
-    padding: 18px 18px 14px 18px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: var(--primary);
+  padding: 18px 18px 14px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* Nav End */
-
 /* Hero */
-
 .hero {
   /*height: 600px; */
   padding-bottom: 32px;
@@ -320,8 +334,9 @@ p {
   display: flex;
   justify-content: center;
 }
+
 .hero-content {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 .hero h1 {
@@ -333,9 +348,9 @@ p {
 }
 
 h3:after {
-    content: "";
-    display: table-cell;
-    width: 100%;
+  content: "";
+  display: table-cell;
+  width: 100%;
 }
 
 h4 a {
@@ -349,7 +364,6 @@ h4 a {
 }
 
 /* Scroller Ball */
-
 .scroller {
   position: relative;
   bottom: 0;
@@ -361,10 +375,10 @@ h4 a {
 
 .scroll-outline {
   margin: 0 auto;
-	height: 40px;
-	width: 30px;
-	border: 2px solid var(--secondary);
-	border-radius: 15px;
+  height: 40px;
+  width: 30px;
+  border: 2px solid var(--secondary);
+  border-radius: 15px;
 }
 
 .scroll-ball {
@@ -373,9 +387,9 @@ h4 a {
   left: 0;
   top: 8px;
   margin: 0 auto;
-	height: 8px;
-	width: 8px;
-	background-color: var(--secondary);
+  height: 8px;
+  width: 8px;
+  background-color: var(--secondary);
   border-radius: 15px;
   animation: ballBounce 1.2s;
   animation-direction: alternate;
@@ -383,18 +397,22 @@ h4 a {
 }
 
 @keyframes ballBounce {
-from {  transform: translate3d(0, 0, 0); }
-to   { transform: translate3d(0, 12px, 0); }
-}
+  from {
+    transform: translate3d(0, 0, 0);
+  }
 
+  to {
+    transform: translate3d(0, 12px, 0);
+  }
+}
 
 .scroller h4 {
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Hero End */
 /* Universal Buttons */
-
 .button-lg {
   float: left;
   display: block;
@@ -439,10 +457,8 @@ to   { transform: translate3d(0, 12px, 0); }
 }
 
 /* Map Styling */
-
 #map {
   height: 500px;
-  border-radius: 1rem;
 }
 
 .gm-style-iw {
@@ -451,26 +467,98 @@ to   { transform: translate3d(0, 12px, 0); }
   border-radius: 2px 2px 0 0;
 }
 
+/* Back to top */
+
+.backTop {
+  display: none;
+  padding: 15px;
+  background-color: var(--primary);
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  color: var(--secondary);
+  font-size: 35px;
+  line-height: 0px;
+  border: 0px transparent;
+}
+
+.backTop:hover {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 35px;
+  line-height: 0px;
+}
+
+.team-image {
+  background-image: url('../img/panteg-park-2018-team-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+
+/* Find Us */
+
+.contact-row {
+  width: 100%;
+  height: auto;
+  background-color: grey;
+}
+
+.half p {
+  color: var(--white);
+}
+
+.half a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.half h3 {
+  color: var(--secondary);
+  border-bottom: 0px;
+}
+.half {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background-color: red;
+
+}
+
+.colour-block {
+  background-color: var(--primary);
+  padding-left: 160px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+
 /* ------------------------------------------------------- */
-
 /* Tablet */
-
 @media (max-width:877px) {
 
   /* Columns */
-
   .row {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    -webkit-flex-wrap: nowrap; /* Safari */
+    -webkit-flex-wrap: nowrap;
+    /* Safari */
     flex-wrap: wrap;
   }
 
-  .col-10, .col-15, .col-20, .col-25, .col-30, .col-33, .col-40, .col-45, .col-50, .col-55, .col-60, .col-70 ,.col-75, .col-80, .col-85, .col-90 {
+  .col-10, .col-15, .col-20, .col-25, .col-30, .col-33, .col-40, .col-45, .col-50, .col-55, .col-60, .col-70, .col-75, .col-80, .col-85, .col-90 {
     margin-left: 1%;
     margin-right: 1%;
-    flex:100%;
+    flex: 100%;
   }
 
   .button-lg {
@@ -491,70 +579,89 @@ to   { transform: translate3d(0, 12px, 0); }
     align-self: center;
   }
 
-  .img-block > img {
+  .img-block>img {
     margin: 0 auto;
     align-self: center;
   }
 
   /* Nav Start */
+  .navbar a, .dropdown .dropbtn {
+    display: none;
+  }
 
-    .navbar a, .dropdown .dropbtn {
-      display: none;
-    }
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
 
-    .navbar.responsive {position: fixed; height: 100%; overflow-y: scroll;-webkit-overflow-scrolling:touch;}
-    .navbar.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .navbar.responsive .dropdown {float: none;}
-    .navbar.responsive .dropdown-content {position: relative;}
-    .navbar.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
+  .navbar.responsive {
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    .hero-image {
-        width: 60%;
-        height: auto;
-    }
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
-.hero h1 {
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Hero Start */
+  .hero-image {
+    width: 60%;
+    height: auto;
+  }
+
+  .hero h1 {
     font-size: 12vw;
     margin-bottom: -14px;
-}
+  }
 
-.hero h2 {
+  .hero h2 {
     margin-bottom: 32px;
     font-size: 8vw;
+  }
+
+  .half {
+    float: left;
+    width: 100%;
+    height: 400px;
+  }
+
+  .colour-block {
+    background-color: var(--primary);
+    padding-left: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
 }
 
+.show {
+  display: block;
+}
 
-  }
-
-  .show {display:block;}
-
-  .fixedPosition
-  {
-     position: fixed;
-  }
-
-
+/* Hero End */
 /* Mobile */
-
-@media (max-width:464px) {
-
-
-}
+@media (max-width:464px) {}
