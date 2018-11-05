@@ -108,7 +108,9 @@ a {
 }
 
 .img-block {
+  order: 2;
   display: flex;
+  margin: 8%;
 }
 
 .img-block>img {
@@ -205,6 +207,7 @@ a {
 
 /* Core Styles */
 .card {
+  order: 1;
   padding: 24px;
   margin: 8px;
 }
@@ -543,6 +546,10 @@ h4 a {
   padding-bottom: 60px;
 }
 
+.m-show {
+  display: none;
+}
+
 /* Footers */
 
 .prefooter {
@@ -577,9 +584,11 @@ footer p {
 
 
 
+
 /* ------------------------------------------------------- */
 /* Tablet */
 @media (max-width:877px) {
+
 
   /* Columns */
   .row {
@@ -690,6 +699,14 @@ footer p {
     padding-left: 10%;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .m-hide {
+    display: none;
+  }
+
+  .m-show {
+    display: block;
   }
 
 }
