@@ -35,6 +35,10 @@ tr:first-child {
   font-weight: 900;
 }
 
+tr:nth-child(even) {
+  background-color: #FBFBFB;
+}
+
 td {
   padding: 8px;
   height: 30px;
@@ -75,4 +79,34 @@ td {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+/* ------------------------------------------------------- */
+/* Tablet */
+@media (max-width:877px) {
+
+  .tables {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      width: 50%;
+  }
+
+  .tab button.active {
+      background-color: #ccc;
+      width: 50%;
+  }
+
 }
