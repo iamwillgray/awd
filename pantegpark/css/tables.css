@@ -1,0 +1,78 @@
+.tables {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.table-wrap {
+display: inline-table;
+width: 100%;
+}
+
+.tab button {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+table {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--body);
+    font-size: 18px;
+    border="0";
+    cellspacing="0";
+    cellpadding="0";
+}
+
+tr:first-child {
+  background-color: #FFF3D8;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+td {
+  padding: 8px;
+  height: 30px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

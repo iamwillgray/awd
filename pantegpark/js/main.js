@@ -1,3 +1,4 @@
+// Menu
 function showMenu() {
     // i is finding the ID desktopNav in the HTML
     var i = document.getElementById("topNav");
@@ -14,15 +15,13 @@ function showMenu() {
     }
     //turns the display off
 }
+///////////////////////////////////////////
 
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+// Dropdown
 function openDropdown() {
     document.getElementById("navDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
@@ -36,20 +35,9 @@ window.onclick = function(event) {
     }
   }
 }
+///////////////////////////////////////////
 
-/*
-if($('.responsive').is(':visible'))
-{
-   $('body').addClass("fixedPosition");
-}
-else
-{
-   $('body').removeClass("fixedPosition");
-}
-
-*/
-
-// When the user scrolls down 20px from the top of the document, show the button
+// Scroll to top
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -60,8 +48,24 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+///////////////////////////////////////////
+
+// Tabs JS
+function openLeague(evt, leagueTable) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(leagueTable).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+///////////////////////////////////////////
