@@ -81,6 +81,7 @@ td {
     border-top: none;
 }
 
+
 /* ------------------------------------------------------- */
 /* Tablet */
 @media (max-width:877px) {
@@ -92,6 +93,10 @@ td {
     margin: 0 auto;
   }
 
+  table {
+    overflow-x:auto;
+  }
+
   .tab button {
       background-color: inherit;
       float: left;
@@ -101,12 +106,31 @@ td {
       padding: 14px 16px;
       transition: 0.3s;
       font-size: 17px;
-      width: 50%;
+      width: 100%;
   }
 
   .tab button.active {
       background-color: #ccc;
-      width: 50%;
+      width: 100%;
   }
+
+  td:nth-child(6) {
+    display: none;
+  }
+
+  td:nth-child(7) {
+    display: none;
+  }
+
+
+  td:nth-child(8) {
+    display: none;
+  }
+
+
+  td:nth-child(10) {
+    display: none;
+  }
+
 
 }
