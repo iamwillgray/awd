@@ -104,4 +104,9 @@ window.onclick = function(event) {
     }
   }
 }
+
+function clickClose() {
+   var element = document.getElementsByClassName("tablinks");
+   element.classList.remove("show");
+}
 ///////////////////////////////////////////

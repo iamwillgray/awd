@@ -179,7 +179,7 @@ td {
       cursor: pointer;
       padding: 14px 16px;
       transition: 0.3s;
-      font-size: 14px;
+      font-size: 17px;
     }
 
     .tabDropdown .dropbtn {
@@ -194,7 +194,7 @@ td {
       margin: 0;
     }
 
-    .navbar a:hover, .tabDropdown:hover .dropbtn {
+    .tabDropdown:hover {
       background-color: var(--hover);
     }
 
