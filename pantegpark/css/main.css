@@ -247,7 +247,7 @@ a {
 }
 
 .navbar {
-  z-index: 1;
+  z-index: 999;
   width: 100%;
   position: fixed;
   background-color: var(--primary);
@@ -641,9 +641,6 @@ footer p {
   margin: 0 auto;
 }
 
-.pa-embed-player {
-  z-index: 0;
-}
 
 
 
