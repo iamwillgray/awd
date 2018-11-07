@@ -543,6 +543,8 @@ h4 a {
 
 .team-image {
   background-image: url('../img/panteg-park-2018-team-photo.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .parallax {
