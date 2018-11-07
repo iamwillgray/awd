@@ -646,9 +646,11 @@ footer p {
 
 
 
+
 /* ------------------------------------------------------- */
 /* Tablet */
 @media (max-width:877px) {
+
 
 
   /* Columns */
@@ -769,6 +771,8 @@ footer p {
   .m-show {
     display: block;
   }
+
+
 
 }
 

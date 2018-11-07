@@ -70,6 +70,10 @@ function openLeague(evt, leagueTable) {
 }
 ///////////////////////////////////////////
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+///////////////////////////////////////////
+
 // Highlight Panteg Park in tables
 var cells = document.getElementsByTagName("td");
 for (var i = 0; i < cells.length; i++) {
@@ -79,5 +83,25 @@ for (var i = 0; i < cells.length; i++) {
         cells[i].style.color = "#691C2E";
         cells[i].style.backgroundImage = "linear-gradient(270deg, rgba(255,250,238,0) 0%, #FFF3D8 100%)";
       }
+}
+///////////////////////////////////////////
+
+// Dropdown
+function openTabs() {
+    document.getElementById("tabDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.tabButton')) {
+
+    var dropdowns = document.getElementsByClassName("tab-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 ///////////////////////////////////////////
