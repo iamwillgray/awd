@@ -247,7 +247,7 @@ a {
 }
 
 .navbar {
-  z-index: 999;
+  z-index: 9999999;
   width: 100%;
   position: fixed;
   background-color: var(--primary);
@@ -530,6 +530,7 @@ h4 a {
   font-size: 35px;
   line-height: 0px;
   border: 0px transparent;
+  z-index: 9999999;
 }
 
 .backTop:hover {
@@ -639,6 +640,26 @@ footer p {
   padding-bottom: 100px;
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.galleries {
+  height: auto;
+  width: 100%;
+  padding-bottom: 120px;
+}
+
+.galleries::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.pa-embed-player {
+  margin: 1%;
+  width:48%;
+  height:300px;
+  display:none;
+  float:left;
 }
 
 
@@ -770,6 +791,14 @@ footer p {
 
   .m-show {
     display: block;
+  }
+
+  .pa-embed-player {
+    margin: 2%;
+    width:96%;
+    height:300px;
+    display:none;
+    float:left;
   }
 
 

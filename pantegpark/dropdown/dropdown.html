@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+
+      /* Style the tab */
+      .tab {
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 14px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+          background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+          background-color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          border-top: none;
+      }
+
+      /* Tabs */
+
+      .tabButton {
+        display: none;
+      }
+
+      @media (max-width:877px) {
+      /* Tabs */
+
+      .navbar a, .dropdown .dropbtn {
+        display: none;
+      }
+
+        .tabButton {
+          display: block;
+        }
+        .tabDropdown {
+          overflow: hidden;
+        }
+
+        #show-style {
+          font-family: 'Open Sans', sans-serif;
+          color: var(--primary);
+          font-size: 20px;
+          font-weight: bolder;
+          width: 100%;
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+          float: left;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+
+        .tabDropdown .dropbtn {
+          font-size: 18px;
+          border: none;
+          outline: none;
+          color: var(--secondary);
+          font-weight: 800;
+          padding: 18px 18px 18px 18px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+
+        .tabDropdown:hover {
+          background-color: var(--hover);
+        }
+
+        .tab-content {
+          display: none;
+          position: absolute;
+          background-color: var(--white);
+          min-width: 160px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+          z-index: 1;
+        }
+
+        .tab-content a {
+          float: none;
+          color: var(--primary);
+          padding: 18px 18px 14px 18px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .tab-content a:hover {
+          background-color: #eeeeee;
+        }
+
+        .tabDropdown:hover .tab-content {
+          display: block;
+          position: inherit;
+          z-index: 2;
+        }
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+    <div class="tabDropdown">
+      <button onclick="openTabs()" class="tabButton" id="show-style">Show All &nbsp;
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="tabDropdown" class="tab-content">
+        <div class="tab">
+          <button class="tablinks" onclick="openLeague(event, '2018')" id="defaultOpen">2018</button>
+          <button class="tablinks" onclick="openLeague(event, '2013')">2017</button>
+          <button class="tablinks" onclick="openLeague(event, '2012')">2016</button>
+          <button class="tablinks" onclick="openLeague(event, '2011')">2015</button>
+          <button class="tablinks" onclick="openLeague(event, '2010')">2014</button>
+          <button class="tablinks" onclick="openLeague(event, '2009')">2013</button>
+          <button class="tablinks" onclick="openLeague(event, '2008')">2012</button>
+          <button class="tablinks" onclick="openLeague(event, '2007')">2011</button>
+        </div>
+
+      </div>
+      <!-- tabDropdown -->
+    </div>
+    <!-- tabDropdown -->
+
+
+<script type="text/javascript"
+
+
+// Dropdown
+function openTabs() {
+    document.getElementById("tabDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.tabButton')) {
+
+    var dropdowns = document.getElementsByClassName("tab-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+>
+
+</script>
+
+
+  </body>
+</html>
