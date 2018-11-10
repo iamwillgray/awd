@@ -16,7 +16,7 @@ request.onerror = function () {
   console.log("There was a connection error of some sort");
 };
 // send request
-reque'table-gen.js'
+request'table-gen.js'
 st.send();
 
 function parseTxt(text) {
