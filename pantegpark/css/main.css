@@ -65,7 +65,7 @@ h4 {
   font-weight: 400;
 }
 
-p {
+p,li {
   font-family: 'Open Sans', sans-serif;
   color: var(--body);
   font-size: 18px;
@@ -594,6 +594,27 @@ h4 a {
   background-size: cover;
 }
 
+.shadowed {
+  width: 100%;
+	background-color: var(--white);
+	box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.24);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.shadowed:hover {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transform: scale(1.06);
+  width: 100%;
+	background-color: var(--white);
+	box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.24);
+}
+
+.primary-color {
+  background-color: var(--primary);
+}
+
 
 /* Find Us */
 
@@ -840,6 +861,22 @@ footer p {
 
   #full-w-image {
     width: 100%;
+  }
+
+  .row-container h3, p {
+    width: 90%;
+    margin: 4%;
+  }
+
+  .info-block {
+    padding: 16px 24px;
+  	width: 95%;
+  	border-radius: 8px;
+  	background-color: #EEEEEE;
+    color: var(--primary);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
   }
 
 
