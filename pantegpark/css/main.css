@@ -615,6 +615,7 @@ h4 a {
   background-color: var(--primary);
 }
 
+
 .reversed p {
   color: var(--white);
 }
@@ -930,19 +931,29 @@ footer p {
   }
 
   .row-container h3, p {
-    width: 90%;
-    margin: 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 100%;
   }
 
   .info-block {
     padding: 16px 24px;
-  	width: 95%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 100%;
   	border-radius: 8px;
   	background-color: #EEEEEE;
     color: var(--primary);
     font-weight: 600;
     text-align: center;
     margin-bottom: 40px;
+  }
+
+
+  .reversed {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 100%;
   }
 
 
