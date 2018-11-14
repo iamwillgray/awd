@@ -57,4 +57,4 @@ for (var i = 0; i < cells.length; i++) {
       }
 }
 
-}, 100);
+}, 10);
