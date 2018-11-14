@@ -1,5 +1,5 @@
 // Highlight Panteg Park in tables
-var cells = table.getElementsByTagName("td");
+var cells = document.getElementsByTagName("td");
 for (var i = 0; i < cells.length; i++) {
     if (cells[i].innerHTML == "Panteg Park") {
         cells[i].style.fontWeight = "bold";
