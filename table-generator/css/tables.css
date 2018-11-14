@@ -32,7 +32,7 @@ table {
     cellpadding="0";
 }
 
-tr:first-child {
+th {
   background-color: #FFF3D8;
   font-family: 'Poppins', sans-serif;
   color: var(--primary);
