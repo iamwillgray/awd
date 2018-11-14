@@ -18,17 +18,6 @@ request.onerror = function () {
 // send request
 request.send();
 
-function parseTxt(text) {
-  var rows = text.split('\n');  // each line is separated ny a cr
-  console.log(rows.length)
-  // write header from first row
-  var table = "<thead><tr>"
-  var cols = rows[0].split(','); // each row is separated by a ,
-  for (var i = 0; i < cols.length; i++) {
-    console.log(cols[i])
-    table += "<th>" + cols[i] + "</th>"
-  }
-
   // create bulk of table
   table += "</tr></thead><tbody>"
   for (var i = 1; i < rows.length; i++) {

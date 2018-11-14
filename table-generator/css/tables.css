@@ -177,16 +177,16 @@ div.panel {
       width: 100%;
   }
 
-  th,td:nth-child(6) {
+  td:nth-child(6) {
     display: none;
   }
 
-  th,td:nth-child(7) {
+  td:nth-child(7) {
     display: none;
   }
 
 
-  th,td:nth-child(8) {
+  td:nth-child(8) {
     display: none;
   }
 
