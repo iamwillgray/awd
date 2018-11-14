@@ -1,0 +1,34 @@
+.galleries {
+  height: auto;
+  width: 100%;
+  padding-bottom: 120px;
+}
+
+.galleries::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.pa-embed-player {
+  margin: 1%;
+  width:48%;
+  height:300px;
+  display:none;
+  float:left;
+}
+
+
+/* ------------------------------------------------------- */
+/* Tablet */
+@media (max-width:877px) {
+
+  .pa-embed-player {
+    margin: 2%;
+    width:96%;
+    height:300px;
+    display:none;
+    float:left;
+  }
+
+}
