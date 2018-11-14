@@ -43,9 +43,9 @@ function parseTxt(text) {
   // add the inner table to the table
   document.getElementById("testTable").innerHTML = table;
 }
-document.addEventListener('DOMContentLoaded', function() {
-   // your code here
 
+
+setTimeout(function(){
 // Highlight Panteg Park in tables
 var cells = document.getElementsByTagName("td");
 for (var i = 0; i < cells.length; i++) {
@@ -57,4 +57,4 @@ for (var i = 0; i < cells.length; i++) {
       }
 }
 
-}, false);
+}, 3000);
