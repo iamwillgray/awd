@@ -195,6 +195,25 @@ div.panel {
     display: none;
   }
 
+
+  td:nth-child(6) {
+    display: none;
+  }
+
+  td:nth-child(7) {
+    display: none;
+  }
+
+
+  td:nth-child(8) {
+    display: none;
+  }
+
+
+  td:nth-child(10) {
+    display: none;
+  }
+
   /* Tabs */
 
   .navbar a, .dropdown .dropbtn {
