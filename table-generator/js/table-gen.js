@@ -16,8 +16,7 @@ request.onerror = function () {
   console.log("There was a connection error of some sort");
 };
 // send request
-reque'table-gen.js'
-st.send();
+request.send();
 
 function parseTxt(text) {
   var rows = text.split('\n');  // each line is separated ny a cr
@@ -40,7 +39,7 @@ function parseTxt(text) {
     }
     table += "</tr>"
   }
-  table += "</tbody>"
+  table += "<tbody>"
   // add the inner table to the table
   document.getElementById("testTable").innerHTML = table;
 }
