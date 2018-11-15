@@ -891,6 +891,16 @@ footer p {
     margin-bottom: -14px;
   }
 
+  .image-header h1 {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12vw;
+    font-weight: 800;
+    line-height: 90px;
+  	line-height: 130%;
+  	text-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  }
+
   .hero h2 {
     margin-bottom: 32px;
     font-size: 8vw;
