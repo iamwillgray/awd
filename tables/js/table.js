@@ -2,7 +2,7 @@
 
 var request = new XMLHttpRequest();
 // set request up
-request.open('GET', '../data/data.csv', true);
+request.open('GET', '/data/data.csv', true);
 // what to do when it loads
 request.onload = function () {
   // check if it has loaded properly
@@ -52,7 +52,7 @@ function parseTxt(text) {
 
 var request = new XMLHttpRequest();
 // set request up
-request.open('GET', '../data/data-2.csv', true);
+request.open('GET', '/data/data-2.csv', true);
 // what to do when it loads
 request.onload = function () {
   // check if it has loaded properly
