@@ -930,9 +930,10 @@ footer p {
   }
 
   .row-container h1, h3, p {
-    margin-left: 1%;
-    margin-right: 1%;
-    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
+    max-width: 100%;
   }
 
   .info-block {
