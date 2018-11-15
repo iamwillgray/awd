@@ -49,7 +49,7 @@ function parseTxt(text) {
 ///////////////////////////////////////////
 
 // Table 2
-
+/*
 var request = new XMLHttpRequest();
 // set request up
 request.open('GET', '/data/data-2.csv', true);
@@ -94,7 +94,7 @@ function parseTxt(text) {
   table += "<tbody>"
   // add the inner table to the table
   document.getElementById("secondTable").innerHTML = table;
-}
+} */
 ///////////////////////////////////////////
 
 
