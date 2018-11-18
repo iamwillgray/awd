@@ -774,8 +774,24 @@ footer p {
   float:left;
 }
 
+.club-officers {
+  padding-top: 120px;
+  padding-bottom: -120px;
+  background-color: var(--primary);
+}
 
+.officers-image {
+  max-width: 100%;
+}
 
+#officers .card {
+  text-align: center;
+  background-color: var(--primary);
+}
+
+#officers h3 {
+  color: var(--secondary);
+}
 
 
 
@@ -956,6 +972,10 @@ footer p {
     line-height: 90px;
     line-height: 130%;
     text-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  }
+
+  .officers-image {
+    margin: 0 auto;
   }
 
 }
