@@ -137,6 +137,16 @@ div.panel {
     transition: max-height 0.2s ease-out;
 }
 
+.div-horizontal-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#table-scroll {
+  display: inline-block;
+}
+
 
 /* ------------------------------------------------------- */
 /* Tablet */
