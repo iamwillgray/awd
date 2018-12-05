@@ -27,6 +27,7 @@
   <!-- CSS start -->
   <link href="../css/main.css" rel="stylesheet">
   <link href="../css/tables.css" rel="stylesheet">
+  <link href="../css/teamphoto.css" rel="stylesheet">
   <!-- CSS end -->
 
 
@@ -293,28 +294,33 @@
 
   <h3>Team Photos</h3>
   <br><br>
-  <div class="galleries">
-
-    <script src="../js/image-player.min.js" async></script>
-    <div class="pa-embed-player"
-      data-link="https://photos.app.goo.gl/pmUYe47s5MMs1WGV6"
-      data-title="Team Photos"
-      data-description="10 new photos · Album by Paul Gray">
-      <img data-src="https://lh3.googleusercontent.com/1E_dJKrooHDbvIaAW46MIKmmT-J-DJvMzX5QIGISh_UqCym1H269m18ytulyQUdwWhr36SmvAJudpo_R-KmoVWQbcg8OkQoJKSVjbOB5l1_e9ewGQDANXSXOMJ-ywvFXi7YDhaJUMw=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/_RK3USSEA2TG7-ItcNkvKsbThuS7uUhxR3NyGtMhoYfsdBQGTjCei9vCj5ZtY9L_zPrVBYh6bd3HyCU5mk2ZZOYtNl0WZFFQT6EALX8-H2KLpkXfgK4Yp7QxjBOWGGRjHPFLfJuIew=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/HsCPD99G1N1fS4k8adelSE8dVCKGGWgl97XQurrX3ZM4BzS5NhyIuRRGSbqh47X1ZdhaTXm475raTKh66rKSzTGqI9v8eKPQhbvTPb8ezT7k14C-fEi_172wjyuJqhLMZ2uUpQ-ucw=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/peYHl747aCGH6eqYD1tfg1cRlow66j_bmgb9quJQ1yHtXxThb0mmbrVNo9p6xVLrUuBBifbgtwSaZkntohaIm0EiAjtSyDJVgcGJR_DCPB3ypS7-AY6__b_Gy0Yym0x0pTYEzgnLBQ=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/i4WuAYd-10-QTh4mtmb0KD09cz-u68d_w8OOTwU4n1tnHHg_h-NgpQIM6HmHJ51W_ACmzAucgdWuZsH1YoAyHlN5pCDKTvLOU-qP5951sIRw-7bLW-Tye7_4n2z-xdyV2UYJDjhJwg=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/rrVLXwzrDrPLdDYEc1U5ns0dfraFQGth8hf8JWKOi-N75eOaypdO0mHbgi_M60kz-QnQ1Z6CJsX9cT927uTrVwJY84oKY35rojhg-9DsbSKliH21FJkO5PcILAb9Emxwb0MqCEnF4g=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/tTlRgEawyIDaZZmAEuiMkUR90DLx49S-KhvIzRssfV9OJpdFTFvCKbIiNcfOKU7VMMtTXpZKhspySW1YK_-Iv6lxTtVfhyV1htJyIjrT7MBcIpRLXLAOJgfsw9NE6knKfnijHzn5-w=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/9orUuFWP5i-9eA_NeHfZazFspDBLUVFRmndTN7wu0Og9T8i68WnhJyfSnSIai_2unFo0qXhZAd-71aM0rU2WxljxMW1ZZSY7Y3w2vQzV6-n66Pz3xzJqRS_cIv44kpudRamAa7zd2A=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/VIab3SSfIYuJTU_xD2tVuZAlYmBY1AZF1L82h64TsB6GnjMq2NKyFVvUkH8E7uLWKHkvU-LSCDxBA1G0DylRMIuaH0ADeJv4DQwqIo9CnIrA5S4SwtpmDav_QlINlwZ-zoO-hfa5KQ=w1920-h1080" src="" alt="" />
-      <img data-src="https://lh3.googleusercontent.com/k4WKDJC3oY88QTuM8ijjwuRpTul6f7JyGiNQz3VgZSLrzq4FWXYMtBXYWiBxc6ETjFXwvITXYKFWUJtJTaAUAm_7yahXFUuwSBU8fDT-fRY9bWGHikdowJnEX6uRmcxfBucLSE7ZKA=w1920-h1080" src="" alt="" />
-    </div>
-
-    <!-- pa-embed end -->
+  <div class="row">
+      <div id="col0" class="column">
+      </div>
+      <div id="col1" class="column">
+      </div>
+      <div id="col2" class="column">
+      </div>
+      <div id="col3" class="column">
+      </div>
+  </div>
 </div>
-<!-- galleries end -->
+
+<!-- MODAL    *********************************************      -->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div id="modal-content-id"class="modal-content">
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/modal-rc.js"></script>
+<script type="text/javascript" src="js/loader3.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 
 </section>
@@ -673,6 +679,9 @@
 
 
     <script src="../js/main.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/loader-teamphoto.js"></script>
+
 
   </body>
 
