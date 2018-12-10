@@ -566,6 +566,12 @@ h4 a {
   background-position: center;
 }
 
+.history-image {
+  background-image: url('../img/history.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .image-header h1 {
   color: var(--white);
   font-family: 'Poppins', sans-serif;

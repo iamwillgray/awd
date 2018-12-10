@@ -94,10 +94,21 @@ td {
   display: none;
 }
 
+.div-horizontal-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
 
 /* ------------------------------------------------------- */
 /* Tablet */
 @media (max-width:877px) {
+
+
+.tabDropdown {
+  width: 100vw;
+}
 
 
 .table-wrap h1 {
